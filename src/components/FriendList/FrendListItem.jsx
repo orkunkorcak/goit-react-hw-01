@@ -1,0 +1,18 @@
+import css from "./FriendList.module.css";
+
+const FriendListItem = ({ avatar, name, isOnline, id }) => {
+    const status = isOnline ? "online" : "offline";
+  return (
+    <li className={css.listElem}>
+      <div key={id}>
+        <img src={avatar} alt="Avatar" width="48" />
+        <p>{name}</p>
+        <p className={`${isOnline ? css.online : css.offline}`}>
+          {isOnline ? "Online" : "Offline"}
+        </p>
+      </div>
+    </li>
+  );
+};
+
+export default FriendListItem;
