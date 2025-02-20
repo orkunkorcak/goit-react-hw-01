@@ -1,9 +1,9 @@
 .transactions {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 300px;
+    width: 600px;
     margin: 40px auto;
-    margin-top: 40px;
+    text-align: center;
   }
   
   .transactions td, .transactions th {
@@ -19,7 +19,6 @@
     
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
     background-color: #333;
     color: white;
   }
